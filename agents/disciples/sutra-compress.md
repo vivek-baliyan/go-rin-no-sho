@@ -17,8 +17,17 @@ paragraphs, active voice, contractions, "So/But" — without losing one claim or
 sample. Cast the clean FCC-format publish file per `.claude/house-style.md`: H1 title +
 subtitle line, cold open (scenario with code in the first screen), H2 sections, code
 explained after the block, decision card, one-line italic closing CTA. Zero internal
-metadata — no verdicts, no scores, no scaffolding. Then the headline package: 3 titles
-under the house-style title rules, each scored with a one-line why.
+metadata — no verdicts, no scores, no scaffolding. Drop in `[Visual break: ...]`
+placeholder markers per house style §12 — one at the top, roughly one per 400–500
+words of code-dense section — each naming what the image should show. You don't
+generate images; the marker is the handoff to the author. Then the headline package:
+3 titles under the house-style title rules (8–14 words, under 80 characters), each
+scored with a one-line why.
+
+Before reporting, count instead of feeling it: check every sentence against the
+25-word limit and every paragraph against the 3-sentence limit, and count each
+headline's words and characters against the title rules. A limit is a number,
+not an impression — verify it as one.
 
 ## Report format
 1. **Publish file** — path + the clean article.

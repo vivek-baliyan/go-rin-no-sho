@@ -21,8 +21,16 @@ with the one sentence that carries the whole idea. Gaps that cannot be closed (p
 undocumented, preview-only behavior) are flagged with `{"warning": ...}` markers — never
 guessed, never fabricated.
 
+Every source you close a gap with becomes a claim-ledger row
+(`.claude/house-style.md` §10) — report it; you have no file-write tools, the
+editing stage casts reported rows into the working file. If pramana already
+tiered that source, carry its
+tier forward as-is — don't re-grade it. Only assign a fresh tier for sources
+pramana never saw.
+
 ## Report format
 1. **Naive explanation** — plain-language first pass.
 2. **Gap manifest** — every doubt: raised → closed (with source) or flagged (`{"warning": ...}`).
 3. **Proven explanation** — final rebuild; ends with the one-sentence core.
-4. **Next ring:** <name | none> — one-line reason.
+4. **Claim ledger rows** — new `claim | source | tier | stage graded` rows (`stage graded: manana` unless carried forward from pramana).
+5. **Next ring:** <name | none> — one-line reason.

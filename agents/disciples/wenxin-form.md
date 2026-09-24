@@ -22,7 +22,14 @@ placements, where the decision card lands. The outline must be buildable by Fire
 new research — if it needs facts the explanation doesn't contain, say so instead of
 inventing sections.
 
+Before finalizing, scan the outline against the working file's claim ledger
+(`.claude/house-style.md` §10: `claim | source | tier | stage graded`) section by
+section. A section built on a claim with no ledger row is the same failure as a
+section needing facts the explanation lacks — flag it as an outline gap rather
+than let Fire discover it mid-draft.
+
 ## Report format
 1. **Format recommendation** — recipe name + one-line why.
 2. **Outline** — numbered sections in the recipe's skeleton, each tied to its content source in the proven explanation.
-3. **Next ring:** <name | none> — one-line reason.
+3. **Ledger check** — any section whose claim has no ledger row, flagged as an outline gap; "none" if every section checks out.
+4. **Next ring:** <name | none> — one-line reason.
