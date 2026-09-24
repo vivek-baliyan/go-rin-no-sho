@@ -48,7 +48,22 @@ cp agents/scrolls/*.md agents/disciples/*.md /path/to/writing-project/.claude/ag
 cp docs/house-style.md /path/to/writing-project/.claude/house-style.md
 ```
 
-4. Restart Claude Code, then dispatch from the agents menu. Try: *"dispatch earth —
+4. Copy the mechanical checker (Void runs it as the countable half of its final read):
+
+```sh
+cp -r scripts /path/to/writing-project/.claude/scripts
+```
+
+5. Optional — the two vendored skills (`skills/paper-lookup`, `skills/citation-management`,
+   MIT, from [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills))
+   upgrade gewu's and pramana's sourcing when present; both agents degrade gracefully
+   without them:
+
+```sh
+cp -r skills/* /path/to/writing-project/.claude/skills/
+```
+
+6. Restart Claude Code, then dispatch from the agents menu. Try: *"dispatch earth —
    I want to write about EF Core ExecuteUpdate pitfalls for a senior .NET audience."*
 
 ## How it works
@@ -58,15 +73,24 @@ cp docs/house-style.md /path/to/writing-project/.claude/house-style.md
 - **Disciples** (`model: sonnet`) have no `Agent` tool and can never spawn subagents
   (platform-enforced via tools + depth cap). Every disciple is also directly
   dispatchable for a single focused strike.
+- **Every claim travels with a tier.** The working file's claim ledger
+  (`claim | source | tier | stage graded`, house-style §10) — pramana grades first;
+  manana, wenxin, and mingshi carry the tier forward instead of re-grading blind.
+- **Earth labels its epistemics.** Every angle is tagged idea | assumption |
+  prediction | located evidence | decision — a trend spike is an idea, never a
+  saturation verdict.
+- **Wind splits its residuals.** Author-facing content decisions vs pipeline-internal
+  process notes — the author never receives squad gossip dressed as feedback.
 - **Mastery runs on the Vedantic cycle** (shravana → manana → nididhyasana) under the
   Feynman standard: if it can't be explained to a child, it isn't mastered yet.
 - **Format is chosen, not defaulted**: pure FCC, or FCC × a technique flavor
   (`fcc-feynman`, `fcc-socratic`, `fcc-inversion`, `fcc-nyaya`) — the library lives in
   the house-style doc and wenxin recommends from it at Gate 2.
 - **Two files per article**: the internal working file (Feynman scaffolding, never
-  published) and the clean FCC-format publish file.
+  published) and the clean FCC-format publish file (zero internal metadata).
 
 ## What it deliberately isn't
 
-No viral machinery, no comment-velocity protocols, no trackers, no scripts. The repo
-ships prompts only. Inspired by the format of [shinobi-agents](../shinobi-agents).
+No viral machinery, no comment-velocity protocols, no trackers. Exactly one script —
+the mechanical half of Void's final read — everything else is prompts. Inspired by the
+format of [shinobi-agents](../shinobi-agents).
