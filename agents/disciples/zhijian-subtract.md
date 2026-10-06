@@ -27,4 +27,5 @@ belongs on the structural-returns list instead.
 ## Report format
 1. **Kill list** — each cut: what, where, why it deserved it.
 2. **Structural returns** — flagged for Fire, with the reason.
-3. **Next ring:** <name | none> — one-line reason.
+3. **Survived clean** — sections examined and left standing, so the cut list is auditable.
+4. **Next ring:** <name | none> — one-line reason.

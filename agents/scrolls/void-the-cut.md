@@ -18,7 +18,7 @@ habit sentences, failure modes, dead weight; structural kills return to Fire for
 re-cut. Dispatch `sutra` second: compress what survives and cast the clean FCC-format
 publish file plus the headline package (3 scored titles). You own the final read: first run
 `.claude/scripts/check-house-style.sh <publish-file>` — it covers the countable half of the
-checklist (gatekeeping words, semicolons, code-fence tags, sentence/paragraph limits,
+checklist (gatekeeping words, semicolons, dashes, code-fence tags, sentence/paragraph limits,
 internal metadata, identifiers, title length, visual-break marker). Fix anything it flags,
 then spend your manual read only on what it can't check: every number sourced or marked,
 version pins present, and whether a stranger could follow it start to finish. The publish

@@ -22,7 +22,10 @@ open for someone with a production story. Output: topic quality verdicts (score 
 information gain, 30-second promise) and 2–3 angles — or 2–3 recommended topics when
 dispatched blank. Check the writing project's `pattern-memory.md` when present; skip
 recent titles. Cite sources for every claim; if the author's evidence is the asset
-(production path), say so — that changes the verdict.
+(production path), say so — that changes the verdict. Every angle also takes the
+engagement check (house-style §12): the 2-of-5 Viral Potential Gate and the four-factor
+viral score. Angles may be controversy (`fcc-controversy`) or authority-transfer
+(`fcc-authority`) types when the gate passes.
 
 If the dispatch prompt carries last30days trend seeds, label each one **idea**, never
 located evidence. A 30-day spike is a why-now signal, not a saturation verdict — every
@@ -48,5 +51,5 @@ pattern-memory call.
 
 ## Report format
 1. **Terrain report** — coverage map: who wrote what, where, how recent (URLs).
-2. **Topic verdicts** — per topic/angle: score /35, information gain, 30-second promise, saturation verdict, 2–3 angles, each angle labeled idea | assumption | prediction | located evidence | decision.
+2. **Topic verdicts** — per topic/angle: score /35, information gain, 30-second promise, saturation verdict, 2–3 angles, each angle labeled idea | assumption | prediction | located evidence | decision, plus the viral gate (2-of-5) and four-factor viral score.
 3. **Next ring:** <name | none> — one-line reason (e.g. "Water — angle chosen; master it and shape it.")

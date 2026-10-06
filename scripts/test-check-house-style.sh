@@ -35,7 +35,7 @@ EOF
 cat > "$tmp/bad.md" <<'EOF'
 # Fix
 
-Obviously this is simply the easy fix; just trust me.
+Obviously this is simply the easy fix; just trust me — the em dash is banned too.
 
 ```
 function debounce(fn, wait) {
@@ -62,7 +62,7 @@ if [ "$bad_rc" -eq 0 ]; then
   echo "TEST FAIL: bad.md should fail, got exit 0"
   fails=1
 else
-  for needle in "anti-gatekeeping" "semicolon" "language identifier" \
+  for needle in "anti-gatekeeping" "semicolon" "em dashes" "language identifier" \
                 "title out of range" "no [Visual break" "internal metadata" \
                 "ticket IDs" "absolute paths" "email addresses"; do
     if ! printf '%s' "$bad_out" | grep -qF "$needle"; then

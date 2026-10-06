@@ -16,9 +16,10 @@ Compress the cut draft to house-style limits — ≤25-word sentences, 2–3 sen
 paragraphs, active voice, contractions, "So/But" — without losing one claim or one code
 sample. Cast the clean FCC-format publish file per `.claude/house-style.md`: H1 title +
 subtitle line, cold open (scenario with code in the first screen), H2 sections, code
-explained after the block, decision card, one-line italic closing CTA. Zero internal
+explained after the block, decision card, one-line italic closing CTA — one
+comment-driving ending from house-style §12. Zero internal
 metadata — no verdicts, no scores, no scaffolding. Drop in `[Visual break: ...]`
-placeholder markers per house style §12 — one at the top, roughly one per 400–500
+placeholder markers per house style §12 — one at the top, roughly one per 300–400
 words of code-dense section — each naming what the image should show. You don't
 generate images; the marker is the handoff to the author. Then the headline package:
 3 titles under the house-style title rules (8–14 words, under 80 characters), each

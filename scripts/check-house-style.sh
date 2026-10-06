@@ -1,5 +1,5 @@
 #!/bin/bash
-# Mechanical subset of house-style.md §12 (Void's verification checklist).
+# Mechanical subset of house-style.md §11 (Void's verification checklist).
 # Run before Void's manual read — this catches the countable stuff so the manual
 # read can focus on the three items that need judgment:
 #   - every number sourced or marked (needs checking the claim ledger)
@@ -43,6 +43,15 @@ if [ -n "$semicolon_hits" ]; then
   say_fail "semicolons found:"$'\n'"$semicolon_hits"
 else
   say_pass "no semicolons"
+fi
+
+# 2b. No em dashes, double hyphens, or spaced-hyphen dashes in prose (house-style §2).
+#     Exempt: code blocks (already blanked) and list markers at line start.
+dash_hits="$(printf '%s\n' "$prose" | grep -nE '(—|—|--|\w - \w)' | grep -vE '^[0-9]+:(#|\||\s)*(-{3,}|===)' || true)"
+if [ -n "$dash_hits" ]; then
+  say_fail "em dashes / double hyphens / spaced-hyphen dashes found:"$'\n'"$dash_hits"
+else
+  say_pass "no em dashes or double hyphens in prose"
 fi
 
 # 3. Code fences have a language identifier (house-style §5)
@@ -97,7 +106,7 @@ else
 fi
 
 # 6. No ticket IDs / absolute paths / emails / commit-hash-like strings anywhere
-#    (house-style §11) — checked on the whole file, code included.
+#    (house-style §14) — checked on the whole file, code included.
 ticket_hits="$(grep -nE '\b[A-Z]{2,}-[0-9]+\b' "$file" || true)"
 path_hits="$(grep -nE '(/Users/|/home/)[A-Za-z0-9_./-]*' "$file" || true)"
 email_hits="$(grep -nE '[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}' "$file" || true)"
