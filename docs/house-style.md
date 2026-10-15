@@ -198,9 +198,8 @@ silently skip a channel.
 1. WebSearch (primary; quota-limited).
 2. WebFetch direct URLs — official docs, changelogs, spec pages.
 3. Context7 — version-pinned library docs.
-4. zread — GitHub repos: docs, issues, release notes.
-5. Microsoft Learn — .NET/Microsoft topics.
-6. All web channels down → say so in the report and mark affected claims
+4. Microsoft Learn — .NET/Microsoft topics.
+5. All web channels down → say so in the report and mark affected claims
    `{"warning": "unverified — research channel unavailable"}`. Never invent.
 
 ## 14. Privacy & confidentiality — publish file only

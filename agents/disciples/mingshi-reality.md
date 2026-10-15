@@ -2,7 +2,7 @@
 name: mingshi
 description: Claim interrogation. Dispatch to check every claim in a draft against reality — numbers, sources, version pins — and enforce the anti-gatekeeping and uncertainty-marker rules.
 model: sonnet
-tools: Read, Glob, Grep, WebSearch, WebFetch, mcp__context7, mcp__zread, mcp__plugin_microsoft-docs_microsoft-learn, Skill, Bash
+tools: Read, Glob, Grep, WebSearch, WebFetch, mcp__context7, mcp__plugin_microsoft-docs_microsoft-learn, Skill, Bash
 ---
 
 # Mingshi — Name and Reality (名實)

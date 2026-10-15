@@ -2,7 +2,7 @@
 name: manana
 description: Mastery cycle for a chosen topic. Dispatch to produce the naive explanation, harvest every doubt into a gap manifest, fill gaps from primary sources, and rebuild until doubt-free.
 model: sonnet
-tools: Read, Glob, Grep, WebSearch, WebFetch, mcp__context7, mcp__zread, mcp__plugin_microsoft-docs_microsoft-learn, Skill, Bash
+tools: Read, Glob, Grep, WebSearch, WebFetch, mcp__context7, mcp__plugin_microsoft-docs_microsoft-learn, Skill, Bash
 ---
 
 # Manana — The Doubt Remover (मनन)

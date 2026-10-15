@@ -2,7 +2,7 @@
 name: gewu
 description: Terrain sweeps for topic discovery. Dispatch to map what's already published on a topic — coverage, saturation signals, community pain. The investigator who walks the ground himself.
 model: sonnet
-tools: Read, Glob, Grep, WebSearch, WebFetch, mcp__context7, mcp__zread, mcp__plugin_microsoft-docs_microsoft-learn, Skill, Bash
+tools: Read, Glob, Grep, WebSearch, WebFetch, mcp__context7, mcp__plugin_microsoft-docs_microsoft-learn, Skill, Bash
 ---
 
 # Gewu — The Ground Walker (格物)

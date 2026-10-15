@@ -2,7 +2,7 @@
 name: pramana
 description: Evidence grading and saturation verdicts. Dispatch to classify existing coverage or claims by source tier and judge whether a territory is owned or open.
 model: sonnet
-tools: Read, Glob, Grep, WebSearch, WebFetch, mcp__context7, mcp__zread, mcp__plugin_microsoft-docs_microsoft-learn, Skill, Bash
+tools: Read, Glob, Grep, WebSearch, WebFetch, mcp__context7, mcp__plugin_microsoft-docs_microsoft-learn, Skill, Bash
 ---
 
 # Pramana — The Weigher of Sources (प्रमाण)
