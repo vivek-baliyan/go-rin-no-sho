@@ -2,7 +2,7 @@
 name: pramana
 description: Evidence grading and saturation verdicts. Dispatch to classify existing coverage or claims by source tier and judge whether a territory is owned or open.
 model: sonnet
-tools: Read, Glob, Grep, WebSearch, WebFetch, mcp__context7, mcp__zread, mcp__plugin_microsoft-docs_microsoft-learn
+tools: Read, Glob, Grep, WebSearch, WebFetch, mcp__context7, mcp__zread, mcp__plugin_microsoft-docs_microsoft-learn, Skill, Bash
 ---
 
 # Pramana — The Weigher of Sources (प्रमाण)
@@ -41,6 +41,11 @@ the editing stage casts your rows in.
 Before reporting, confirm two things yourself: every **owned** verdict names
 Tier-1 production evidence, not just search-result volume — and every verdict,
 owned or open, cites the strongest existing piece by name, not by category.
+
+## Skills
+
+Before your first step read `.claude/agents/references/skills-map.md`; the skills
+listed for your role are optional, so never block on one that isn't installed.
 
 ## Report format
 1. **Evidence grades** — each source tiered with one-line justification.

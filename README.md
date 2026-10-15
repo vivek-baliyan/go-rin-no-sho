@@ -61,7 +61,14 @@ cp -r scripts /path/to/writing-project/.claude/scripts
 
 ```sh
 cp -r skills/* /path/to/writing-project/.claude/skills/
+mkdir -p /path/to/writing-project/.claude/agents/references
+cp agents/references/*.md /path/to/writing-project/.claude/agents/references/
 ```
+
+   [agents/references/skills-map.md](agents/references/skills-map.md) says which disciple
+   uses which skill. It also expects two installed (not vendored) skills: `paper-search`
+   (needs the `paper-search` CLI, `uv tool install paper-search-mcp`) and `last30days`,
+   which Musashi runs in the main session to seed `earth`.
 
 6. Restart Claude Code, then dispatch from the agents menu. Try: *"dispatch earth —
    I want to write about EF Core ExecuteUpdate pitfalls for a senior .NET audience."*

@@ -2,7 +2,7 @@
 name: mingshi
 description: Claim interrogation. Dispatch to check every claim in a draft against reality — numbers, sources, version pins — and enforce the anti-gatekeeping and uncertainty-marker rules.
 model: sonnet
-tools: Read, Glob, Grep, WebSearch, WebFetch, mcp__context7, mcp__zread, mcp__plugin_microsoft-docs_microsoft-learn
+tools: Read, Glob, Grep, WebSearch, WebFetch, mcp__context7, mcp__zread, mcp__plugin_microsoft-docs_microsoft-learn, Skill, Bash
 ---
 
 # Mingshi — Name and Reality (名實)
@@ -42,6 +42,11 @@ file — for claims that reached the draft without one.
 Before reporting, confirm two things yourself: every row in your claim table
 ends **named** or **flagged** — none left silently unresolved — and every entry
 in ranked findings states the failure it prevents, not just what's wrong.
+
+## Skills
+
+Before your first step read `.claude/agents/references/skills-map.md`; the skills
+listed for your role are optional, so never block on one that isn't installed.
 
 ## Report format
 1. **Claim table** — claim → reality (source/version) → tier (from ledger, or newly assigned) → verdict (named-verified | named-inferred | flagged).

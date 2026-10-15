@@ -2,7 +2,7 @@
 name: gewu
 description: Terrain sweeps for topic discovery. Dispatch to map what's already published on a topic — coverage, saturation signals, community pain. The investigator who walks the ground himself.
 model: sonnet
-tools: Read, Glob, Grep, WebSearch, WebFetch, mcp__context7, mcp__zread, mcp__plugin_microsoft-docs_microsoft-learn
+tools: Read, Glob, Grep, WebSearch, WebFetch, mcp__context7, mcp__zread, mcp__plugin_microsoft-docs_microsoft-learn, Skill, Bash
 ---
 
 # Gewu — The Ground Walker (格物)
@@ -33,6 +33,11 @@ Minimum three distinct source types actually searched (not just named) before an
 official docs, changelogs, Stack Overflow. Log every search you run, hit or miss:
 `source/tag | query used | date | result count`. A "0 results" row is as valid a
 log entry as a hit — it's what makes "not found" checkable instead of asserted.
+
+## Skills
+
+Before your first step read `.claude/agents/references/skills-map.md`; the skills
+listed for your role are optional, so never block on one that isn't installed.
 
 ## Report format
 1. **Coverage map** — table: source, URL, date, tier hint, one-line summary.
